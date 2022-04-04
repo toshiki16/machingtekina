@@ -1,0 +1,32 @@
+@import '~bootstrap/scss/bootstrap';
+
+//users/idのアイコンとかを導入するやつの調整版みたいなのかも
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
+/* ここに追加 */
+@import "top";
+
+//users/idのアイコンの色とか変更かな
+@import "layouts/navbar";
+
+//サインアップのscss反映
+@import "users/sign_up";
+
+
+//ログインのscss反映
+@import "users/sign_in";
+
+//マイページ
+@import "users/show";
+
+//メアド等再設定画面
+@import "users/edit";
+
+//
+@import "users/index";
+
+// マッチングした画面
+@import "matching/index";
+
+//チャットルームの画面
+@import "chat_rooms/index";
