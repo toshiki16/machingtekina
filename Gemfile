@@ -36,9 +36,6 @@ gem 'carrierwave', '~> 2.0'
 gem "mini_magick"
 
 
-gem 'sqlite3', group: :development
-# 本番ではpostgressを使用する
-gem 'pg', group: :production
 
 
 group :development, :test do

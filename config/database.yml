@@ -84,15 +84,9 @@ test:
 #
 
 
-#修正
-# production:
-#   <<: *default
-#   database: techpit_match_production
-#   username: root
-#   password: root
-
+# 後に確かめる・「後で」
 production:
- <<: *default
- adapter: postgresql
- encoding: unicode
- pool: 5
+  <<: *default
+  database: techpit_match_production
+  username: root
+  password: root
