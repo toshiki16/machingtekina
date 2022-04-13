@@ -82,8 +82,17 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+
+
+#修正
+# production:
+#   <<: *default
+#   database: techpit_match_production
+#   username: root
+#   password: root
+
 production:
-  <<: *default
-  database: techpit_match_production
-  username: root
-  password: root
+ <<: *default
+ adapter: postgresql
+ encoding: unicode
+ pool: 5
