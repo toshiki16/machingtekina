@@ -26,7 +26,8 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  # コメントアウトした。というのも、assetsエラーを直すため。https://qiita.com/koda_7932/items/63061c197aabf1dafb0e
+  # config.assets.compile = false
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = 'http://assets.example.com'
