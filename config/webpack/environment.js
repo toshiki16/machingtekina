@@ -22,8 +22,25 @@ const { environment } = require('@rails/webpacker')
 
 // environment.config.merge(customConfig);
 
+const path = require("path")
 
-
+const customConfig = {
+  module: {
+    rules: [
+      {
+        test: /.scss$/i,
+        use: ['style-loader', 'css-loader', 'sass-loader', {
+          loader: 'postcss-loader', options: {
+            postcssOptions: {
+              config: path.resolve(__dirname, '../../postcss.config.js')
+            }
+          }
+        }],
+      }
+    ]
+  }
+}
+environment.config.merge(customConfig);
 module.exports = environment
 
 
